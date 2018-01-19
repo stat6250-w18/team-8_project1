@@ -1,3 +1,3 @@
 # team-8_project1
 
-Team Nickname:
+Team Nickname: S.A.S. (Safety Aviation Study)
