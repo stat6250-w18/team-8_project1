@@ -76,3 +76,34 @@ proc sort
         Event_Id
     ;
 run;
+
+* build analytic dataset from AviationData dataset with the least number of columns and
+minimal cleaning/transformation needed to address research questions in
+corresponding data-analysis files;
+data AviationData_analytic_file;
+    retain
+        Event_Date
+        Location
+        Country
+        Latitude
+        Longitude
+        Make
+        Model
+        Air_Carrier
+        Weather_Condition
+        Broad_Phase_of_Flight
+    ;
+    keep
+        Event_Date
+        Location
+        Country
+        Latitude
+        Longitude
+        Make
+        Model
+        Air_Carrier
+        Weather_Condition
+        Broad_Phase_of_Flight
+    ;
+    set AviationData_raw;
+run;
