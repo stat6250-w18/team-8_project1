@@ -85,11 +85,11 @@ data AviationData_analytic_file;
         Event_Date
         Location
         Country
-        InjurySeverity
-        AircraftCategory
+        Injury_Severity
+        Aircraft_Category
         Make
         Model
-		PurposeOfFlight
+	Purpose_of_Flight
         Air_Carrier
         Weather_Condition
         Broad_Phase_of_Flight
@@ -98,11 +98,11 @@ data AviationData_analytic_file;
         Event_Date
         Location
         Country
-        InjurySeverity
-        AircraftCategory
+        Injury_Severity
+        Aircraft_Category
         Make
         Model
-		PurposeOfFlight
+	Purpose_of_Flight
         Air_Carrier
         Weather_Condition
         Broad_Phase_of_Flight
