@@ -85,10 +85,11 @@ data AviationData_analytic_file;
         Event_Date
         Location
         Country
-        Latitude
-        Longitude
+        InjurySeverity
+        AircraftCategory
         Make
         Model
+		PurposeOfFlight
         Air_Carrier
         Weather_Condition
         Broad_Phase_of_Flight
@@ -97,10 +98,11 @@ data AviationData_analytic_file;
         Event_Date
         Location
         Country
-        Latitude
-        Longitude
+        InjurySeverity
+        AircraftCategory
         Make
         Model
+		PurposeOfFlight
         Air_Carrier
         Weather_Condition
         Broad_Phase_of_Flight
