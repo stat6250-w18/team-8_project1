@@ -169,7 +169,3 @@ proc print
 run;
 title;
 footnote;
-
-*
-Need to seperate the dates by year
-;
