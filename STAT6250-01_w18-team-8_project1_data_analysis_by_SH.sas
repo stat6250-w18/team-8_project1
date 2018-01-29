@@ -51,25 +51,25 @@ and better handle missing data.
 ;
 
 proc freq
-		data = AviationData_analytic_file
-	;
-	table
-		Make / out=FreqCount list
-	;
+        data = AviationData_analytic_file
+    ;
+    table
+        Make / out=FreqCount list
+    ;
 run;
 
 proc sort
-    	data=FreqCount
-		out=FreqCount_Desc
-	;
+        data=FreqCount
+	out=FreqCount_Desc
+    ;
     by
-		descending count
+	descending count
     ;
 run;
 
 proc print
-		data=FreqCount_Desc(obs=9)
-	;
+         data=FreqCount_Desc(obs=9)
+    ;
 run;
 title;
 footnote;
@@ -105,24 +105,24 @@ Phase of Flight, and better handle missing data.
 ;
 
 proc freq
-		data = AviationData_analytic_file
-	;
+        data = AviationData_analytic_file
+    ;
     table
-		Broad_Phase_of_Flight / out=FreqCount list
+        Broad_Phase_of_Flight / out=FreqCount list
     ;
 run;
 
 proc sort
-		data=FreqCount
-		out=FreqCount_Desc
+        data=FreqCount
+        out=FreqCount_Desc
     ;
     by
-		descending percent
+        descending percent
     ;
 run;
 
 proc print
-		data=FreqCount_Desc 
+         data=FreqCount_Desc 
     ;
 run;
 title;
@@ -148,24 +148,24 @@ Event_Date.
 ;
 
 proc freq
-		data = AviationData_analytic_file
+        data = AviationData_analytic_file
     ;
     table
-		Event_Date / out=FreqCount list
+        Event_Date / out=FreqCount list
     ;
 run;
 
 proc sort
-		data=FreqCount
-		out=FreqCount_Desc
+        data=FreqCount
+	out=FreqCount_Desc
     ;
     by
-		descending percent
+        descending percent
     ;
 run;
 
 proc print
-		data=FreqCount_Desc 
+         data=FreqCount_Desc 
     ;
 run;
 title;
