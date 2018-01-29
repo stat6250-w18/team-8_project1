@@ -63,6 +63,7 @@ proc sort
 	    descending count
 	;
 run;
+
 proc print
     data=FreqCount_Desc 
         (obs=9)
@@ -70,6 +71,8 @@ proc print
 run;
 title;
 footnote;
+
+
 
 title1
 'Research Question: What is the distribution of accidents during each phase of flight?'
@@ -114,12 +117,15 @@ proc sort
 	    descending percent
 	;
 run;
+
 proc print
     data=FreqCount_Desc 
 	;
 run;
 title;
 footnote;
+
+
 
 title1
 'Research Question: What are the percentage of accidents that occur in each state according to year?'
@@ -154,6 +160,7 @@ proc sort
 	    descending percent
 	;
 run;
+
 proc print
     data=FreqCount_Desc 
 	;
