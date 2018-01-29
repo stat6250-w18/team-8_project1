@@ -6,9 +6,11 @@
 *
 This file uses the following analytic dataset to address three research
 questions regarding civil aviation accidents from 1962 to 2017.
+
 Dataset Name: AviationData_analytic_file created in external file
 STAT6250-01_w18-team-8_project1_data_preparation.sas, which is assumed to be
 in the same directory as this file
+
 See included file for dataset properties
 ;
 
