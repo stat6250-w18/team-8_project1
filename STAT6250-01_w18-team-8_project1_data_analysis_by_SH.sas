@@ -54,13 +54,13 @@ proc freq
         data = AviationData_analytic_file
     ;
     table
-        Make / out=FreqCount list
+        Make / out = FreqCount list
     ;
 run;
 
 proc sort
-        data=FreqCount
-	out=FreqCount_Desc
+        data = FreqCount
+	out = FreqCount_Desc
     ;
     by
 	descending count
@@ -68,7 +68,7 @@ proc sort
 run;
 
 proc print
-         data=FreqCount_Desc(obs=9)
+         data = FreqCount_Desc(obs=9)
     ;
 run;
 title;
@@ -108,13 +108,13 @@ proc freq
         data = AviationData_analytic_file
     ;
     table
-        Broad_Phase_of_Flight / out=FreqCount list
+        Broad_Phase_of_Flight / out = FreqCount list
     ;
 run;
 
 proc sort
-        data=FreqCount
-        out=FreqCount_Desc
+        data = FreqCount
+        out = FreqCount_Desc
     ;
     by
         descending percent
@@ -122,7 +122,7 @@ proc sort
 run;
 
 proc print
-         data=FreqCount_Desc 
+         data = FreqCount_Desc 
     ;
 run;
 title;
@@ -151,13 +151,13 @@ proc freq
         data = AviationData_analytic_file
     ;
     table
-        Event_Date / out=FreqCount list
+        Event_Date / out = FreqCount list
     ;
 run;
 
 proc sort
-        data=FreqCount
-	out=FreqCount_Desc
+        data = FreqCount
+	out = FreqCount_Desc
     ;
     by
         descending percent
@@ -165,7 +165,7 @@ proc sort
 run;
 
 proc print
-         data=FreqCount_Desc 
+         data = FreqCount_Desc 
     ;
 run;
 title;
