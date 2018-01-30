@@ -143,6 +143,7 @@ Methodology: Use PROQ FREQ to generate a dataset that counts the accidents by
 year,and then use PROC SORT to sort the data by descending count. 
 
 Limitations: This methodology does not attempt to validate the data in any way. 
+
 Possible Follow-up Steps: More carefully clean the values of the variable 
 Event_Date.
 ;
