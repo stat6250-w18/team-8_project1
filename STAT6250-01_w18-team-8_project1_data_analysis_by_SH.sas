@@ -85,7 +85,7 @@ title2
 ;
 
 footnote1
-'Based on the above output, the distribution fo accidents are as follows: 26.73% during landing, 20.95% during takeoff, 13.91% during cruise, 13.5% during manuvering, 10.5% during approach'
+'Based on the above output, the distribution of accidents are as follows: 26.73% during landing, 20.95% during takeoff, 13.91% during cruise, 13.5% during manuvering, 10.5% during approach'
 ;
 
 footnote2
@@ -131,11 +131,19 @@ footnote;
 
 
 title1
-'Research Question: What are the percentage of accidents that occur in each state according to year?'
+'Research Question: What year had the greatest amount of accidents?'
 ;
 
 title2
-'Rationale: This will help determine if there is a pattern of accidents by year and by state.'
+'Rationale: This will help determine if aviation safety is getting any better.'
+;
+
+footnote1
+'Based on the above output, 1987, 1988, and 1989 had the highest percentage of accidents at ~4%.'
+;
+
+footnote2
+'It is apparent that as the years progressed, the amount of accidents decreased; however, there are some years that don't quite follow that.'
 ;
 
 *
@@ -153,6 +161,9 @@ proc freq
     ;
     table
         Event_Date / out = FreqCount list
+    ;
+    format
+        Event_Date year4.
     ;
 run;
 
