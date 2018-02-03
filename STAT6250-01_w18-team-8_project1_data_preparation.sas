@@ -25,6 +25,18 @@ column headers to remove characters disallowed in SAS variable names.
 [Unique ID Schema] The column “Event_Id” is a primary key.
 ;
 
+
+* environmental setup;
+
+* create output formats;
+proc format;
+    value $WeatherConditionFmt
+	    'IMC'='Instrument meteorological conditions'
+		'UNK'='Unknown'
+		'VMC'='Visual meteorological conditions'
+	;
+run;
+
 * setup environmental parameters;
 %let inputDatasetURL =
 https://github.com/stat6250/team-8_project1/blob/master/AviationData-edited.xlsx?raw=true
