@@ -129,6 +129,7 @@ to explain what is 'Unkown' mean.
 proc freq data= AviationData_analytic_file;
     tables Weather_Condition;
     where Aircraft_Category="Airplane";
+	format Weather_Condition $WeatherConditionFmt.;
 run;
 title;
 footnote;
