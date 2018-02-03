@@ -145,7 +145,7 @@ title2
 ;
 
 footnote1
-'Based on the above output, the top three years with the greatest amount of accidents are as follows: 1987 had 2,828 accidents, 1988 had 2,730 accidents, and 1989 had 2,544 accidents.' '
+'Based on the above output, the top three years with the greatest amount of accidents are as follows: 1987 had 2,828 accidents, 1988 had 2,730 accidents, and 1989 had 2,544 accidents.' 
 ;
 
 footnote2
