@@ -31,10 +31,10 @@ column headers to remove characters disallowed in SAS variable names.
 * create output formats;
 proc format;
     value $WeatherConditionFmt
-	    'IMC'='Instrument meteorological conditions'
-		'UNK'='Unknown'
-		'VMC'='Visual meteorological conditions'
-	;
+        'IMC'='Instrument meteorological conditions'
+        'UNK'='Unknown'
+        'VMC'='Visual meteorological conditions'
+    ;
 run;
 
 * setup environmental parameters;
